@@ -1,0 +1,31 @@
+.productCard{
+    padding: 10px;
+    height: 55px;
+    width: 55px;
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productCard img{
+    width: 30px;
+    height: auto;
+    margin-top: 5px;
+}
+.productCard p{
+    text-align: center;
+    font-size: .7rem;
+    font-weight: 500;
+    margin: auto;
+}
+
+.productCard span{
+    color: #eccb01;
+    font-size: .7rem;
+    font-weight: 500;
+    margin: auto;
+}

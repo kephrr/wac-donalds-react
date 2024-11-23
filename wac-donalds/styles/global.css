@@ -11,10 +11,15 @@
 
 .title{
     font-size: 1.5rem;
-    margin: 15px;
+    margin: 15px 0 15px 15px;
 }
 .title span{
     font-weight: bold;
+}
+
+.sub-title{
+    font-size: 1rem;
+    margin: 15px 0 15px 15px;
 }
 
 .grid {
@@ -22,6 +27,7 @@
     grid-template: ". .";
     gap: 10px 10px;
     justify-content: start;
+    width: 90%;
 }
 
 .o-y{
@@ -31,6 +37,7 @@
 .grid-3 {
     display: grid;
     grid-template: ". . .";
-    gap: 10px 10px;
+    gap: 15px 15px;
     justify-content: start;
 }
+
