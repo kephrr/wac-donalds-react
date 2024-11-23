@@ -17,12 +17,18 @@ export default function Home() {
                       <Icon size={50} src='./icons/burger.svg'></Icon>
                   </div>
                   <Space h={20}></Space>
-                  <p className="title"> <span>Hey,</span><br/>What's Up ?</p>
-                  <div className="grid">
-                        <ProductCard temp={true}></ProductCard>
-                      <ProductCard temp={false}></ProductCard>
-                        <ProductCard></ProductCard>
-                        <ProductCard></ProductCard>
+                  <p className="title"><span>Hey,</span><br/>What's Up ?</p>
+                  <Space h={20}></Space>
+                  <div className="grid o-y">
+                      <ProductCard temp={1}></ProductCard>
+                      <ProductCard temp={0}></ProductCard>
+                      <ProductCard></ProductCard>
+                      <ProductCard></ProductCard>
+                  </div>
+                  <Space h={20}></Space>
+                  <p className="title"><span>Popular</span><br/></p>
+                  <div className="grid o-y">
+                      <ProductCard temp={1}></ProductCard>
                   </div>
               </aside>
               <aside className={styles.side2}>
