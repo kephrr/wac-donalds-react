@@ -27,11 +27,7 @@
     grid-template: ". .";
     gap: 10px 10px;
     justify-content: start;
-    width: 90%;
-}
-
-.o-y{
-    overflow-y: scroll;
+    width: 100%;
 }
 
 .grid-3 {
@@ -41,3 +37,29 @@
     justify-content: start;
 }
 
+.max-h{
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+@media screen and (min-width: 900px) {
+    .grid-3 {
+        display: grid;
+        grid-template: ". . . . . .";
+        gap: 15px 15px;
+        justify-content: start;
+    }
+    .grid {
+        display: grid;
+        grid-template: ". . . . .";
+        gap: 10px 10px;
+        justify-content: start;
+        width: 100%;
+    }
+    .max-h{
+        max-width: 80vw;
+        overflow-x: unset;
+        overflow-y: unset;
+    }
+}

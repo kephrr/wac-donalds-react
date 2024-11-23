@@ -29,3 +29,19 @@
     display: flex;
     justify-content: end;
 }
+
+.center{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+    .main{
+        display: flex;
+        height: auto;
+        overflow: unset;
+    }
+}

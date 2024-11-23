@@ -10,6 +10,11 @@
     justify-content: center;
     align-items: center;
 }
+@media screen and (min-width: 900px) {
+    .productCard:hover{
+        cursor: pointer;
+    }
+}
 
 .productCard img{
     width: 30px;

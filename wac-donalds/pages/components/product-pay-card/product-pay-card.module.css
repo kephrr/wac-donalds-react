@@ -1,7 +1,6 @@
 .productCard{
     padding: 10px;
-    height: 55px;
-    width: 55px;
+    width: auto;
 
     border-radius: 15px;
 
@@ -10,11 +9,16 @@
     justify-content: center;
     align-items: center;
 }
+@media screen and (min-width: 900px) {
+    .productCard:hover{
+        cursor: pointer;
+    }
+}
 
 .productCard img{
-    width: 30px;
+    width: 25px;
     height: auto;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 .productCard p{
     text-align: center;
@@ -28,4 +32,19 @@
     font-size: .7rem;
     font-weight: 500;
     margin: auto;
+}
+
+.select{
+    display: flex;
+    gap: 10px;
+}
+.select .plus, .select .minus{
+    padding: 0 7px;
+    border-radius: 5px;
+}
+.plus {
+    background-color: #eccb01;
+}
+.minus{
+    border: solid 1px #9f9f9f;
 }

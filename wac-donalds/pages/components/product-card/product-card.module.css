@@ -1,4 +1,5 @@
 .productCard{
+    transition: all .2s ease-out;
     background-color: #eef3f4;
 
     padding: 10px;
@@ -12,8 +13,21 @@
     justify-content: center;
     align-items: center;
 }
+@media screen and (min-width: 900px) {
+    .productCard:hover{
+        background-color: #d4dedf;
+    }
+    .productCardRed:hover{
+        background-color: #b10101;
+    }
+    .productCardRed:hover, .productCard:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
 
 .productCardRed{
+    transition: all .2s ease-out;
     background-color: #dd0101;
 
     padding: 10px;

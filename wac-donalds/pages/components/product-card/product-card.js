@@ -1,7 +1,7 @@
 import styles from './product-card.module.css'
-import Icon from "../icon/icon";
 
-function ProductCard({temp}) {
+function ProductCard({temp, item}) {
+    const src = './icons/'+item.icon
     let style;
     switch(temp) {
         case 1:
@@ -10,14 +10,12 @@ function ProductCard({temp}) {
         default :
             style = styles.productCard
     }
-    // if (temp) style = styles.productCardRed
+
     return <div className={style}>
-        <img src='./icons/cheese-burger.svg' alt=""/>
-        <p>Combo Meal</p>
-        <span>20% off</span>
+        <img src={src} alt=""/>
+        <p>{item.name}</p>
+        <span>{item.promo}</span>
     </div>
 }
-
-
 
 export default ProductCard;

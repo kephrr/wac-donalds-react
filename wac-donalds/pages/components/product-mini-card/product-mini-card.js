@@ -1,12 +1,13 @@
 import styles from './product-mini-card.module.css'
 import Icon from "../icon/icon";
 
-function ProductMiniCard() {
+function ProductMiniCard({item}) {
+    const src = './icons/'+item.icon
     let style = styles.productCard
     return <div className={style}>
-        <img src='./icons/cheese-burger.svg' alt=""/>
-        <p>Combo Meal</p>
-        <span>$3.79</span>
+        <img src={src} alt=""/>
+        <p>{item.name}</p>
+        <span>${item.price}</span>
     </div>
 }
 
