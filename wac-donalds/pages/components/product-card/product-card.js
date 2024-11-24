@@ -13,7 +13,7 @@ function ProductCard({temp, item}) {
     return <div className={style}>
         <img src={src} alt=""/>
         <p>{item?.name || "Product"}</p>
-        <span>{item?.promo || "price"}</span>
+        <span>{item?.promo || "-20%"}</span>
     </div>
 }
 

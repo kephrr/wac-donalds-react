@@ -3,7 +3,7 @@ import {useState} from "react";
 
 function ProductPayCard({item}) {
     const [nbr, setNbr] = useState(1)
-    const src = './icons/'+item.icon
+    const src = './icons/'+item?.icon || './icons/burger.svg'
 
     function upNbr() {
         if(nbr!==9) setNbr(nbr+1)
@@ -14,8 +14,8 @@ function ProductPayCard({item}) {
 
     return <div className={styles.productCard}>
         <img src={src} alt=""/>
-        <p>{item.name}</p>
-        <span>${item.price}</span>
+        <p>{item?.name || 'Pay'}</p>
+        <span>${item?.price || "3.29"}</span>
         <div className={styles.select}>
             <div className={styles.minus} onClick={downNbr}>-</div>
             <div>{nbr}</div>
