@@ -75,12 +75,12 @@ export default function Home() {
       <div>
           <Head>
               <title>Wac Donald's WebSite</title>
-              <link rel="icon" href="/favicon.ico"/>
+              <link rel="icon" href="/logo.png"/>
           </Head>
           <main className={styles.main}>
               <aside className={styles.side1}>
                   <div className={styles.start}>
-                      <Icon size={50} src='./icons/burger.svg'></Icon>
+                      <Icon size={50} src='/logo.png'></Icon>
                   </div>
                   <Space h={40}></Space>
                   <p className="title"><span>Hey,</span><br/>What's Up ?</p>
@@ -106,7 +106,7 @@ export default function Home() {
               </aside>
               <aside className={styles.side2}>
                   <div className={styles.end}>
-                      <Icon size={30} src='./icons/burger.svg'></Icon>
+                      <Icon size={30} src='gabon.png'></Icon>
                   </div>
                   <Space h={50}></Space>
                   <p className="title"><span>My Order</span></p>

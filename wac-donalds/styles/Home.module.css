@@ -45,3 +45,8 @@
         overflow: unset;
     }
 }
+@media screen and (max-width: 425px) {
+    .side2{
+        flex: 3;
+    }
+}
