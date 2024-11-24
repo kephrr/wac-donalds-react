@@ -22,12 +22,12 @@
 .start{
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 .end{
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .center{
