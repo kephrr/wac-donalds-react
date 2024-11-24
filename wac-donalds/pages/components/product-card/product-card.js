@@ -1,7 +1,7 @@
 import styles from './product-card.module.css'
 
 function ProductCard({temp, item}) {
-    const src = './icons/'+item.icon || './icons/burger.svg'
+    const src = './icons/'+item?.icon || './icons/burger.svg'
     let style;
     switch(temp) {
         case 1:
