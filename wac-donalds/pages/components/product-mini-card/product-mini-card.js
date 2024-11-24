@@ -1,5 +1,4 @@
 import styles from './product-mini-card.module.css'
-import Icon from "../icon/icon";
 
 function ProductMiniCard({item}) {
     const src = './icons/'+item.icon

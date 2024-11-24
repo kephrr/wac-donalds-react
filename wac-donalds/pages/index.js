@@ -6,7 +6,6 @@ import ProductCard from "./components/product-card/product-card";
 import ProductMiniCard from "./components/product-mini-card/product-mini-card";
 import LateralBar from "./components/bar/bar";
 import ProductPayCard from "./components/product-pay-card/product-pay-card";
-import React, { useState, useEffect } from 'react';
 
 export default function Home() {
     const data = [
@@ -115,7 +114,6 @@ export default function Home() {
                   <div className={styles.center}>
                       {selected.map(function (i) {
                           return <ProductPayCard item={i}></ProductPayCard>
-
                       })}
                   </div>
               </aside>
